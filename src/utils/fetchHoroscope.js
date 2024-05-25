@@ -1,5 +1,6 @@
 // utils/fetchHoroscope.js
 const axios = require("axios");
+require("dotenv").config();
 
 const fetchHoroscope = async (sign) => {
   try {
