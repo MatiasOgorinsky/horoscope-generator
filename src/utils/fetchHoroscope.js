@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const fetchHoroscope = async (sign) => {
   try {
-    const openaiApiKey = "sk-proj-XTUz6CM4mxImFEjRQjSBT3BlbkFJ7rArU7tLKGYZerHXOg6K";
+    const openaiApiKey = process.env.OPENAI_API_KEY;
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${openaiApiKey}`,
