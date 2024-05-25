@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const fetchHoroscope = async (sign) => {
   try {
-    const openaiApiKey = process.env.OPENAI_API_KEY;
+    const openaiApiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${openaiApiKey}`,
